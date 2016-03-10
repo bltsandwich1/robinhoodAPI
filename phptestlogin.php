@@ -1,8 +1,8 @@
 <?php
-$usern = "usernamevalhere"
-$passw = "passwordvalhere"
-echo $usern
-echo $passw
+$usern = "usernamevalhere";
+$passw = "passwordvalhere";
+echo $usern;
+echo $passw;
 $fields = array(
 	'username' => urlencode($_POST[$usern]),
 	'password' => urlencode($_POST[$passw])
