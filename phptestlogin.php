@@ -10,7 +10,7 @@ rtrim($fields_string, '&');
   curl_setopt($curl_handle,CURLOPT_URL,'https://api.robinhood.com/api-token-auth/');
   curl_setopt($curl_handle,CURLOPT_POST,count($fields));
   curl_setopt($curl_handle,CURLOPT_POSTFIELDS, $fields_string);
-  echo $fieldsstring;
+  echo $fields_string;
   $buffer = curl_exec($curl_handle);
   curl_close($curl_handle);
   if (empty($buffer)){
