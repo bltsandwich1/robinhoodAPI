@@ -1,7 +1,7 @@
 <?php
 $fields = array(
 	'username' => urlencode($_POST['last_name']),
-	'password' => urlencode($_POST['first_name']),
+	'password' => urlencode($_POST['first_name'])
 );
 foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
