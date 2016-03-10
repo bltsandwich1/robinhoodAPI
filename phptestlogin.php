@@ -4,8 +4,8 @@ $passw = "passwordvalhere";
 echo $usern;
 echo "\n";
 $fields = array(
-	'username' => urlencode($_POST[$usern]),
-	'password' => urlencode($_POST[$passw])
+	'username' => urlencode($usern),
+	'password' => urlencode($passw)
 );
 echo $fields;
 foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
