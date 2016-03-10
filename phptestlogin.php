@@ -1,6 +1,5 @@
 <?php
-$last_name = 'lastname';
-$first_name = 'firstname';
+
 $fields = array(
 	'username' => urlencode($_POST['last_name']),
 	'password' => urlencode($_POST['first_name'])
