@@ -1,8 +1,11 @@
 <?php
-
+$usern = "usernamevalhere"
+$passw = "passwordvalhere"
+echo $usern
+echo $passw
 $fields = array(
-	'username' => urlencode($_POST['last_name']),
-	'password' => urlencode($_POST['first_name'])
+	'username' => urlencode($_POST[$usern]),
+	'password' => urlencode($_POST[$passw])
 );
 foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 rtrim($fields_string, '&');
